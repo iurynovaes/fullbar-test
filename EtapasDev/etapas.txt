@@ -1,0 +1,11 @@
+## Processo que pensei resumidamente para fazer o teste
+
+- Pensei em baixar o esqueleto slim com composer
+- Depois instalar as dependências para usar o Eloquent e a leitura do CSV
+- Criei no modelo MVC e então, precisei criar as pastas dentro do src
+- Adicionei uma pasta config dentro do src para guardar as configurações do banco de dados
+- Após estruturar, comecei a implementar os Models baseado na modelagem do banco que me passaram
+- Implementei os controllers juntamente com suas rotas para realizar a chamada dos endpoints
+- Depois de desenvolver a importação seguindo as regras de negócios impostas, testei via HTTP com Imsomnia
+- Repeti o mesmo passo para a criação do endpoint de bônus
+- Ao final de testar os endpoints, escrevi o SQL para o relatório solicitado.
