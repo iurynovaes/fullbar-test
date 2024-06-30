@@ -26,10 +26,10 @@ class Cargo extends Model
 
         switch ($this->cargo_label) {
             case 'SUPERVISOR_LOJA':
-                return ceil($pontos * 0.35); // Ganha 35% em relação ao total de pontos
+                return ceil($pontos * SUPERVISOR_LOJA_BONUS); // Ganha 35% em relação ao total de pontos
             
             case 'GERENTE_REGIONAL':
-                return ceil(ceil($pontos * 0.35) * 0.20); // Ganha 20% em relação aos pontos do Supervisor
+                return ceil(ceil($pontos * SUPERVISOR_LOJA_BONUS) * GERENTE_REGIONAL_BONUS); // Ganha 20% em relação aos pontos do Supervisor
         }
     }
 }

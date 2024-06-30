@@ -4,7 +4,6 @@ namespace App\Controllers;
 
 use App\Models\Ponto;
 use App\Models\User;
-use Illuminate\Support\Facades\DB;
 use Psr\Http\Message\ResponseInterface as Response;
 use Psr\Http\Message\ServerRequestInterface as Request;
 
@@ -12,7 +11,7 @@ class ScoreController
 {
     public function aplicarBonus(Request $request, Response $response, $args)
     {
-        $cargosBonus = ['GERENTE_REGIONAL', 'SUPERVISOR_LOJA'];
+        $cargosBonus = CARGOS_BONUS;
 
         $pontos = Ponto::selectRaw('SUM(pontos.pontos_qtd) as tot_pontos')
             ->join('usuario', 'usuario.usuario_id', '=', 'pontos.usuario_id')
