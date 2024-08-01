@@ -25,7 +25,7 @@
         "php": "^7.4 || ^8.0",
         "ext-json": "*",
         "illuminate/database": "^11.13",
-        "illuminate/support": "^11.13",
+        "illuminate/support": "^11.19",
         "league/csv": "^9.16",
         "monolog/monolog": "^2.8",
         "php-di/php-di": "^6.4",
